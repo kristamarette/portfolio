@@ -1,12 +1,54 @@
-$color1: #FCF9E9;
-$color2: #BFA10A;
-$color3: #020126;
-$color4: rgba(62, 63, 89, 1);
-$font1: assistant;
-$font2: zingendeB;
-$pad1: 3em;
-$pad2: 1em;
+$color1: #f2f2f2;
+$color2: #707070;
+$color3: #1A1818;
+$color4: #2466B3;
+$color5: #CCAD58;
+$color6: #C63C3C;
+$font1: centuryGothic;
+$font2: gautreaux;
+$pad1: 1em; /* 16px */
+$pad2: 5em; /* 80px */
 
+/* ------- FONTS -------------
+Fonts added:
+Century Gothic Pro Bold
+
+font-family: century-gothic, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+Century Gothic Pro Bold Italic
+
+font-family: century-gothic, sans-serif;
+font-weight: 700;
+font-style: italic;
+
+Century Gothic Pro Italic
+
+font-family: century-gothic, sans-serif;
+font-weight: 400;
+font-style: italic;
+
+Century Gothic Pro Regular
+
+font-family: century-gothic, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Gautreaux Light
+
+font-family: gautreaux, sans-serif;
+font-weight: 300;
+font-style: normal;
+
+Gautreaux Bold
+
+font-family: gautreaux, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+
+---------- EXAMPLES ------------
 @font-face {
   font-family: assistant;
   src: url("../fonts/assistant-v4-latin-regular.woff");
@@ -19,9 +61,16 @@ $pad2: 1em;
   font-family: zingendeL;
   src: url("../fonts/Zingende\ W00\ Light.ttf");
 }
-
+----------------*/
 /* ------------- HOME PAGE ----------------*/
+*, html, body {
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  background: $color1;
+}
 
 
 
