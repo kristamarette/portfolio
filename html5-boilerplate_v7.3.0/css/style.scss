@@ -64,39 +64,39 @@ body {
 /*--------NAVIGATION-----------*/
 header {
   position: fixed;
-  background: $color1;
+  width: 95vw;
+  height: 5em;
+  background: none;
   color: $color3;
   font-weight: 700;
   font-style: normal;
   padding: $pad1;
   display: flex;
- justify-content: space-between;
+  justify-content: space-between;
   overflow: hidden;
 }
 
 .pageTitle {
-  position: fixed;
   font-family: century-gothic, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 4em;
-  // padding: $pad1;
 }
 
 a.logo {
-  position: fixed;
   text-decoration: none;
   font-weight: bold;
   margin: 0 .5em 0;
 }
 
 nav {
-  position: fixed;
   top: 0;
-  right: 0;
+  right: $pad1;
+  float: right;
+  position: fixed;
   height: 100vh;
   background: $color2;
-  width: 33%;
+  width: 25%;
   visibility: hidden;
   opacity: 0;
   transform: translateX(50%);
@@ -105,7 +105,7 @@ nav {
 }
 
 .open {
-  position: fixed;
+  // position: fixed;
   margin: 0;
   padding: 10px;
   background-color: $color3;
@@ -177,9 +177,16 @@ li a {
   background: $color3;
   margin-top: 2px;
 }
+
+
 /*-------------HOME PAGE------------*/
 
+.welcome h2 {
+font-family: gautreaux, sans-serif;
+font-weight: 300;
+font-style: normal;
 
+}
 
 
 
