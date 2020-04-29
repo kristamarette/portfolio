@@ -1,9 +1,9 @@
 $color1: #f2f2f2;
 $color2: #707070;
-$color3: #1A1818;
-$color4: #2466B3;
-$color5: #CCAD58;
-$color6: #C63C3C;
+$color3: #1a1818;
+$color4: #2466b3;
+$color5: #ccad58;
+$color6: #c63c3c;
 
 $pad1: 1em;
 /* 16px */
@@ -86,7 +86,7 @@ header {
 a.logo {
   text-decoration: none;
   font-weight: bold;
-  margin: 0 .5em 0;
+  margin: 0 0.5em 0;
 }
 
 nav {
@@ -100,7 +100,7 @@ nav {
   visibility: hidden;
   opacity: 0;
   transform: translateX(50%);
-  transition: all .5s;
+  transition: all 0.5s;
   z-index: 1;
 }
 
@@ -115,7 +115,7 @@ nav {
 .exit {
   width: 2em;
   float: right;
-  margin: .5em;
+  margin: 0.5em;
   cursor: pointer;
 }
 
@@ -131,17 +131,17 @@ li a {
   font-weight: 100;
   font-style: normal;
   text-decoration: none;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   display: block;
 }
 
 .open {
   cursor: pointer;
-  margin: .5em;
+  margin: 0.5em;
 }
 
 li a:hover {
-background: $color4;
+  background: $color4;
 }
 
 .open-nav {
@@ -178,17 +178,54 @@ li a {
   margin-top: 2px;
 }
 
-
 /*-------------HOME PAGE------------*/
 
 .welcome h2 {
-font-family: gautreaux, sans-serif;
-font-weight: 300;
-font-style: normal;
-
+  padding: 3em 10px 10px;
+  font-family: gautreaux, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 3em;
+  color: $color3;
+  text-align: center;
+  z-index: -1;
 }
 
+.welcome p {
+  padding: 10px 10px;
+  font-family: century-gothic, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  color: $color3;
+  text-align: center;
+  z-index: -1;
+}
 
+.homepageMenu {
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  right: 1em;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+  z-index: -1;
+  background-color: #f2f2f2;
+  color: $color3;
+  text-align: center;
+}
+.column {
+  flex: 90%;
+  max-width: 30%;
+  max-height: 160px;
+  padding: 10px;
+  align-items: center;
+  // width: 100px;
+  background-color: #F2F2F2;
+  img {
+    border-radius: 50%;
+  }
+}
 
 /* ----------- PROJECT GUIDELINES ------------*/
 /*
