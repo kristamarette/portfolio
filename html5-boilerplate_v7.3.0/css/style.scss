@@ -63,6 +63,7 @@ body {
 
 /*--------NAVIGATION-----------*/
 header {
+  position: fixed;
   background: $color1;
   color: $color3;
   font-weight: 700;
@@ -74,6 +75,7 @@ header {
 }
 
 .pageTitle {
+  position: fixed;
   font-family: century-gothic, sans-serif;
   font-weight: 100;
   font-style: normal;
@@ -82,6 +84,7 @@ header {
 }
 
 a.logo {
+  position: fixed;
   text-decoration: none;
   font-weight: bold;
   margin: 0 .5em 0;
@@ -93,14 +96,16 @@ nav {
   right: 0;
   height: 100vh;
   background: $color2;
-  width: 66%;
+  width: 33%;
   visibility: hidden;
   opacity: 0;
   transform: translateX(50%);
   transition: all .5s;
+  z-index: 1;
 }
 
 .open {
+  position: fixed;
   margin: 0;
   padding: 10px;
   background-color: $color3;
@@ -108,7 +113,7 @@ nav {
 }
 
 .exit {
-  width: 1em;
+  width: 2em;
   float: right;
   margin: .5em;
   cursor: pointer;
@@ -172,6 +177,8 @@ li a {
   background: $color3;
   margin-top: 2px;
 }
+/*-------------HOME PAGE------------*/
+
 
 
 

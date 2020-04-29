@@ -52,6 +52,7 @@ body {
 
 /*--------NAVIGATION-----------*/
 header {
+  position: fixed;
   background: #f2f2f2;
   color: #1A1818;
   font-weight: 700;
@@ -67,6 +68,7 @@ header {
 }
 
 .pageTitle {
+  position: fixed;
   font-family: century-gothic, sans-serif;
   font-weight: 100;
   font-style: normal;
@@ -74,6 +76,7 @@ header {
 }
 
 a.logo {
+  position: fixed;
   text-decoration: none;
   font-weight: bold;
   margin: 0 .5em 0;
@@ -85,16 +88,18 @@ nav {
   right: 0;
   height: 100vh;
   background: #707070;
-  width: 66%;
+  width: 33%;
   visibility: hidden;
   opacity: 0;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
   -webkit-transition: all .5s;
   transition: all .5s;
+  z-index: 1;
 }
 
 .open {
+  position: fixed;
   margin: 0;
   padding: 10px;
   background-color: #1A1818;
@@ -102,7 +107,7 @@ nav {
 }
 
 .exit {
-  width: 1em;
+  width: 2em;
   float: right;
   margin: .5em;
   cursor: pointer;
@@ -168,6 +173,7 @@ li a {
   margin-top: 2px;
 }
 
+/*-------------HOME PAGE------------*/
 /* ----------- PROJECT GUIDELINES ------------*/
 /*
 Css variables--
