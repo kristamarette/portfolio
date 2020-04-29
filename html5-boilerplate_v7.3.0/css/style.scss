@@ -4,14 +4,13 @@ $color3: #1A1818;
 $color4: #2466B3;
 $color5: #CCAD58;
 $color6: #C63C3C;
-$font1: centuryGothic;
-$font2: gautreaux;
+
 $pad1: 1em; /* 16px */
 $pad2: 5em; /* 80px */
 
 /* ------- FONTS -------------
 Fonts added:
-Century Gothic Pro Bold
+Century Gothic Pro Bold 
 
 font-family: century-gothic, sans-serif;
 font-weight: 700;
@@ -55,9 +54,29 @@ font-style: normal;
 
 body {
   background: $color1;
+  height: 100vh;
 }
 
+/*--------NAVIGATION-----------*/
+header {
+  background: $color1;
+  color: $color3;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
 
+.pageTitle {
+  font-family: 'gautreaux; san serif';
+  font-weight: 700;
+  font-style: normal;
+}
+
+a.logo {
+  text-decoration: none;
+  font-weight: bold;
+  margin: 1em .5em 0;
+}
 
 /* ----------- PROJECT GUIDELINES ------------*/
 /*
