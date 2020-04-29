@@ -219,18 +219,37 @@ li a {
   -webkit-box-flex: 90%;
       -ms-flex: 90%;
           flex: 90%;
-  max-width: 30%;
-  max-height: 30%;
+  max-width: 25%;
   padding: 10px;
+  width: 60px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: auto;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
+  margin-bottom: 1em;
 }
 
 .column img {
   border-radius: 50%;
+}
+
+.column a {
+  text-decoration: none;
+  color: #1a1818;
+}
+
+.column h3 {
+  text-align: center;
+  font-family: century-gothic, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.column img:hover {
+  border: solid 2px #707070;
+  -webkit-box-shadow: 2px 2px 5px #707070, 2px 2px 5px #707070, 2px 2px 5px #707070;
+          box-shadow: 2px 2px 5px #707070, 2px 2px 5px #707070, 2px 2px 5px #707070;
+  text-align: center;
 }
 
 /* ----------- PROJECT GUIDELINES ------------*/
