@@ -54,6 +54,10 @@ body {
 header {
   background: #f2f2f2;
   color: #1A1818;
+  font-family: gautreaux, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,23 +65,19 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow: hidden;
-  font-family: 'gautreaux; san serif';
-  font-weight: 700;
-  font-style: normal;
-  padding: 1em;
 }
 
 .pageTitle {
-  font-family: 'gautreaux; san serif';
+  font-family: gautreaux, sans-serif;
   font-weight: 700;
   font-style: normal;
-  padding: 1em;
+  font-size: 4em;
 }
 
 a.logo {
   text-decoration: none;
   font-weight: bold;
-  margin: 1em .5em 0;
+  margin: 0 .5em 0;
 }
 
 nav {
@@ -85,7 +85,7 @@ nav {
   top: 0;
   right: 0;
   height: 100vh;
-  background: #1A1818;
+  background: #707070;
   width: 66%;
   visibility: hidden;
   opacity: 0;
@@ -109,12 +109,12 @@ ul {
 }
 
 li a {
-  color: #707070;
-  text-decoration: none;
-  padding: .5em 1em;
-  font-family: 'century-gothic, sans-serif';
+  color: #f2f2f2;
+  font-family: century-gothic, sans-serif;
   font-weight: 400;
   font-style: normal;
+  text-decoration: none;
+  padding: .5em 1em;
   display: block;
 }
 
@@ -124,8 +124,49 @@ li a {
 }
 
 .active a {
-  color: #2466B3;
+  color: #CCAD58;
   font-weight: bold;
+}
+
+li a:hover {
+  background: #2466B3;
+}
+
+.open-nav {
+  visibility: unset;
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.submenu {
+  padding: 0 1em;
+}
+
+.submenu p {
+  margin: 1em 0 1em 1em;
+  color: #1A1818;
+  line-height: 1.4em;
+}
+
+.submenu ul {
+  margin: 1em 0 1em;
+}
+
+.submenu a {
+  color: #1A1818;
+  background: none;
+  font-weight: bold;
+}
+
+.submenu a:hover {
+  background: none;
+}
+
+li a {
+  font-weight: bold;
+  background: #1A1818;
+  margin-top: 2px;
 }
 
 /* ----------- PROJECT GUIDELINES ------------*/
