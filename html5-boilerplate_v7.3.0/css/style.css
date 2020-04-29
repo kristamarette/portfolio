@@ -38,21 +38,6 @@ font-family: gautreaux, sans-serif;
 font-weight: 700;
 font-style: normal;
 
-
----------- EXAMPLES ------------
-@font-face {
-  font-family: assistant;
-  src: url("../fonts/assistant-v4-latin-regular.woff");
-}
-@font-face {
-  font-family: zingendeB;
-  src: url("../fonts/ZingendeW00Bold.woff");
-}
-@font-face {
-  font-family: zingendeL;
-  src: url("../fonts/Zingende\ W00\ Light.ttf");
-}
-----------------*/
 /* ------------- HOME PAGE ----------------*/
 *, html, body {
   margin: 0;
