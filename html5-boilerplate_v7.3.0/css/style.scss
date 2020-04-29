@@ -65,18 +65,17 @@ body {
 header {
   background: $color1;
   color: $color3;
-  font-family: gautreaux, sans-serif;
   font-weight: 700;
   font-style: normal;
   padding: $pad1;
   display: flex;
-  justify-content: space-between;
+ justify-content: space-between;
   overflow: hidden;
 }
 
 .pageTitle {
-  font-family: gautreaux, sans-serif;
-  font-weight: 700;
+  font-family: century-gothic, sans-serif;
+  font-weight: 100;
   font-style: normal;
   font-size: 4em;
   // padding: $pad1;
@@ -101,8 +100,15 @@ nav {
   transition: all .5s;
 }
 
+.open {
+  margin: 0;
+  padding: 10px;
+  background-color: $color3;
+  border-radius: 50%;
+}
+
 .exit {
-  width: 2em;
+  width: 1em;
   float: right;
   margin: .5em;
   cursor: pointer;
@@ -117,7 +123,7 @@ ul {
 li a {
   color: $color1;
   font-family: century-gothic, sans-serif;
-  font-weight: 400;
+  font-weight: 100;
   font-style: normal;
   text-decoration: none;
   padding: .5em 1em;
@@ -127,11 +133,6 @@ li a {
 .open {
   cursor: pointer;
   margin: .5em;
-}
-
-.active a {
-  color: $color5;
-  font-weight: bold;
 }
 
 li a:hover {
@@ -159,10 +160,8 @@ background: $color4;
 }
 
 .submenu a {
-  //font-weight: normal;
   color: $color3;
   background: none;
-  font-weight: bold;
 }
 
 .submenu a:hover {
@@ -170,7 +169,6 @@ background: $color4;
 }
 
 li a {
-  font-weight: bold;
   background: $color3;
   margin-top: 2px;
 }
