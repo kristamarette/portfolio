@@ -91,7 +91,7 @@ nav {
   background: #707070;
   width: 25%;
   visibility: hidden;
-  opacity: 0;
+  opacity: .80;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
   -webkit-transition: all 0.5s;
@@ -232,6 +232,7 @@ li a {
 
 .column img {
   border-radius: 50%;
+  margin-top: 10px;
 }
 
 .column a {
@@ -258,7 +259,7 @@ footer {
   position: fixed;
   width: 100vw;
   bottom: 0;
-  height: 3em;
+  height: 2.75em;
   margin-top: 10px;
   background-color: #1a1818;
   z-index: 1;
@@ -290,6 +291,14 @@ footer h3 {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+}
+
+#footer-section h3 {
+  color: #1a1818;
+}
+
+#footer-section h3:hover {
+  color: #f2f2f2;
 }
 
 /* ----------- PROJECT GUIDELINES ------------*/

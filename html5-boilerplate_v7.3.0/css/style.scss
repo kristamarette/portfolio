@@ -98,7 +98,7 @@ nav {
   background: $color2;
   width: 25%;
   visibility: hidden;
-  opacity: 0;
+  opacity: .80;
   transform: translateX(50%);
   transition: all 0.5s;
   z-index: 1;
@@ -228,6 +228,7 @@ li a {
 
   img {
     border-radius: 50%;
+    margin-top: 10px;
   }
 
   a {
@@ -255,7 +256,7 @@ footer {
   position: fixed;
   width: 100vw;
   bottom: 0;
-  height: 3em;
+  height: 2.75em;
   margin-top: 10px;
   background-color: $color3;
   z-index: 1;
@@ -282,6 +283,16 @@ footer h3 {
 
 #footer-section i {
   display: inline-flex;
+}
+
+#footer-section h3 {
+  // visibility: hidden;
+  color: $color3;
+}
+
+#footer-section h3:hover {
+  // visibility: visible;
+  color: $color1;
 }
 
 // .info {
