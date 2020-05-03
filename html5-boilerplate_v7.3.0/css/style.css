@@ -254,12 +254,13 @@ li a {
   text-align: center;
 }
 
+/*---------------ABOUT ME-------------*/
 /*---------------FOOTER---------------*/
 footer {
   position: fixed;
   width: 100vw;
   bottom: 0;
-  height: 2.75em;
+  height: 2.5em;
   margin-top: 10px;
   background-color: #1a1818;
   z-index: 1;

@@ -250,13 +250,36 @@ li a {
   text-align: center;
 }
 
+/*---------------ABOUT ME-------------*/
+.homepageMenu {
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  right: 1em;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+  z-index: -1;
+  background-color: #f2f2f2;
+  color: $color3;
+  text-align: center;
+}
+.column {
+  flex: 90%;
+  max-width: 25%;
+  padding: 5px;
+  margin: 0;
+  width: 60px;
+  align-items: center;
+  background-color: $color1;
+
 /*---------------FOOTER---------------*/
 
 footer {
   position: fixed;
   width: 100vw;
   bottom: 0;
-  height: 2.75em;
+  height: 2.5em;
   margin-top: 10px;
   background-color: $color3;
   z-index: 1;
