@@ -255,6 +255,51 @@ li a {
 }
 
 /*---------------ABOUT ME-------------*/
+.aboutMenu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #f2f2f2;
+  color: #1a1818;
+  margin: auto;
+  padding: 10px;
+}
+
+.columnA {
+  width: 300px;
+  padding: 5px;
+  margin: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f2f2f2;
+  font-family: century-gothic, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  padding: 5px;
+}
+
+.columnA h3 {
+  margin-top: 1em;
+}
+
+.columnA img {
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.columnA p {
+  margin-top: 10px;
+}
+
+.columnA a {
+  text-decoration: none;
+}
+
 /*---------------FOOTER---------------*/
 footer {
   position: fixed;

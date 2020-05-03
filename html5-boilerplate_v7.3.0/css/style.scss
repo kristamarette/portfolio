@@ -251,27 +251,41 @@ li a {
 }
 
 /*---------------ABOUT ME-------------*/
-.homepageMenu {
-  padding: 1em;
+.aboutMenu {
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 0;
-  right: 1em;
-  flex-flow: wrap;
   justify-content: space-evenly;
-  z-index: -1;
-  background-color: #f2f2f2;
+  background-color: $color1;
   color: $color3;
-  text-align: center;
+  // align-items: center;
+  margin: auto;
+  padding: 10px;
 }
-.column {
-  flex: 90%;
-  max-width: 25%;
+.columnA {
+  width: 300px;
   padding: 5px;
-  margin: 0;
-  width: 60px;
+  margin: 10px;
   align-items: center;
   background-color: $color1;
+  font-family: century-gothic, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  padding: 5px;
+  h3 {
+    margin-top: $pad1;
+  }
+  img {
+    border-radius: 50%;
+    margin-top: 10px;
+  }
+  p {
+    margin-top: 10px;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
 
 /*---------------FOOTER---------------*/
 
