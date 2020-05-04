@@ -94,6 +94,7 @@ header {
   position: fixed;
   // background-color: $color1;
   backdrop-filter: blur(8px);
+  -moz-backdrop-filter: blur(8px);
   // opacity: .4;
   height: 15vh;
   width: 100vw;
