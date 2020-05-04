@@ -28,14 +28,16 @@
   <!-- Add your site or application content here -->
 
   <!----------NAVIGATION BAR----------->
+
+  <div class="blur"></div>
   <header>
-    <a href="#home" class="logo"><img src="img/KM_art favicon.svg" width="80px" alt="Krista Marette art logo"
+        <a href="#home" class="logo"><img src="img/KM_art favicon.svg" width="80px" alt="Krista Marette art logo"
         color="#1A1818"></a>
-    <h1 class="pageTitle"> by Krista Marette</h1>
-    <svg height="32px" id="menu-btn" class="open" viewBox="0 0 32 32">
-      <path fill="#f2f2f2"
+        <h1 class="pageTitle"> by Krista Marette</h1>
+        <svg height="100%" id="menu-btn" class="open" viewBox="0 0 32 32">
+        <path fill="#f2f2f2"
         d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z" />
-    </svg>
+        </svg>
   </header>
   <nav id="nav"><svg viewBox="0 0 24 24" id="exit-btn" class="exit">
       <path id="exit" fill="#f2f2f2"
@@ -43,14 +45,14 @@
     </svg>
     <ul>
       <li><a href="#home">Home</a></li>
-      <li><a href="#">About Me</a>
+      <li><a href="#aboutMe">About Me</a>
         <div class="submenu">
           <ul>
-            <li><a href="#">Graphic Designer</a></li>
-            <li><a href="#">Digital Designer</a></li>
-            <li><a href="#">Knowledgeable</a></li>
-            <li><a href="#">Achievements</a></li>
-            <li><a href="#">Volunteer</a></li>
+            <li><a href="#graphicDesigner">Graphic Designer</a></li>
+            <li><a href="#digitalDesigner">Digital Designer</a></li>
+            <li><a href="#knowledgeable">Knowledgeable</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#volunteer">Volunteer</a></li>
           </ul>
         </div>
       </li>
@@ -66,13 +68,16 @@
       <li><a href="#">Fine Art</a></li>
     </ul>
   </nav>
+
+<!------------------HOME PAGE------------------>
+
   <main>
     <div id= "home" class="welcome">
-      <h2>Welcome to my Portfolio Site</h2>
+      <h2>Welcome</h2>
       <p>I’m seeking opportunities to showcase my passion for developing creative solutions and communications.</p>
     </div>
     <div class="homepageMenu">
-      <div class="column"><a href="#">
+      <div class="column"><a href="#aboutMe">
           <h3>About Me</h3><img src="/html5-boilerplate_v7.3.0/img/sq_Headshot.jpg" style="width:100%"
             alt="My headshot">
         </a></div>
@@ -81,14 +86,14 @@
             alt="Digital apple painting">
         </a></div>
       <div class="column"><a href="#">
-          <h3>Photography & Fine Art</h3><img src="/html5-boilerplate_v7.3.0/img/sq_bananas.jpg" style="width:100%"
+          <h3>Photography & Art</h3><img src="/html5-boilerplate_v7.3.0/img/sq_bananas.jpg" style="width:100%"
             alt="Photo of Bananas painting on canvas">
         </a></div>
         <br>
     </div>
   </main>
 
-    <!---------- ABOUT ME ---------->
+    <!------------- ABOUT ME ------------->
 
   <main>
     <div id= "aboutMe" class="welcome">
@@ -97,41 +102,41 @@
     <div class="aboutMenu">
       <div class="columnA">
         <div class="rowA">
-          <h3>Graphic Designer</h3>
-          <p>Branding, Logo Conception, Logo Enhancement, Package Design, or maybe it’s a re-branding opportunity, I want to collaborate. I can help tell your story. I will take into account your expectations and develop an effective plan of execution based on your timeline and budget. Managing a budget is a priority of mine for every project. 
+          <h3 id="graphicDesigner">Graphic Designer</h3>
+          <p>Branding, Logo Conception, Logo Enhancement, Package Design, or a re-branding opportunity, I want to collaborate. I want to tell your story. With expectations set, lets develop an effective plan of execution. Managing a timeline and budget is a specialty of mine for every project. 
           </p>
           <br>
         </div>
         <div class="rowA">
-          <h3>Achievements</h3>
+          <h3 id="achievements">Achievements</h3>
           <p>B.A. Professional Communications: Public Relations</p>
            <p> Fall Semester 2019 Dean’s List</p>
             <p>Director of Marketing & Public Relations, Phi Theta Kappa Honor Society 
-          </p>
+            </p>
           <p>Designer, <em>The Century Times</em> magazine</p>
         </div>
       </div>
       <div class="columnA">
         <div class="rowA">
-          <h3>Volunteer</h3>
-          <p>I’m passionate about seeing success in the next generation. After years of volunteering for the local school system, I now volunteer for the national campaign No Kid Hungry. It is an opportunity to be a part of the execution of large-scale events that benefit children across the country. For more information visit: <a href=" www.nokidhungry.org">nokidhungry.org</a>
+          <h3 id="volunteer">Volunteer</h3>
+          <p>I’m passionate about seeing success in the next generation. I volunteer for the national campaign No Kid Hungry. It's an opportunity to flex my skills in the execution of large-scale events that benefit children across the country. For more information visit: <a href="https://www.nokidhungry.org" target="_blank">nokidhungry.org</a>
           </p>
           <br>
         </div>
         <div class="rowB">
-          <h3>No Kid Hungry Event Display</h3><img src="/html5-boilerplate_v7.3.0/img/sq_Auction.jpg" style="width:100%"
+          <h3>NKH Event Display</h3><img src="/html5-boilerplate_v7.3.0/img/sq_Auction.jpg" style="width:100%"
             alt="Auction display I created for No Kid Hungry">
         </div>
       </div>
       <div class="columnA">
         <div class="rowA">
-          <h3>Digital Designer</h3>
-          <p>We live online. It’s important to have a cohesive vision across all visual elements in a campaign. Knowing the audience, how they connect and where they encounter a campaign. Using a template doesn’t always cut it. Templates limit creativity, are over-used, and audiences are bored – consumers need to be engaged. I will make sure that your site is captivating, functions, and is responsive. 
+          <h3 id="digitalDesigner">Digital Designer</h3>
+          <p>We live online. It’s important to have a cohesive vision across all touchpoints in a campaign. Using a website template doesn’t always cut it. Templates limit creativity, are over-used, and audiences are bored – consumers need to be engaged. Lets make sure that your site is captivating, functions, and is responsive. 
           </p>
         </div>
         <div class="rowB">
-          <h3>Knowledgeable</h3>
-          <p>Going to print is expensive. Proof-read everything. I hunt for errors, typos, proper spacing, or color to all be on point. I have experience in creating a wide variety of print materials: magazines, flyers, brochures, art, t-shirts, etc… At the end of the day – lets go to print.
+          <h3 id="knowledgeable">Knowledgeable</h3>
+          <p>Going to print is expensive. Proof-read, re-read everything. Cut out errors and typos, enforce marketing guideliines to be on point. I have experience in creating a wide variety of print materials: magazines, flyers, brochures, art, t-shirts, etc… At the end of the day – lets go to print.
           </p>
         </div>
       </div>
@@ -139,7 +144,51 @@
   </main>
 
       <!---------- DIGITAL ART ---------->
-    <!---------- PHOTOGRAPHY & FINE ART ---------->
+  <main>
+    <div id= "digitalArt" class="welcome">
+      <h2>Digital Art</h2>
+    </div>
+    <div class="digitalMenu">
+      <div class="columnA">
+        <div class="rowA">
+          <h3 id="frontEnd">Front-End Design</h3>
+          <p>Hey look, I wrote this site. <em>"Hey look ma I made it!"</em> Check out some of my other web design projects on my GitHub account. Click the cat icon in the footer.
+          </p>
+          <br>
+          <br>
+          <br>
+        </div>
+        <div class="rowB">
+          <img src="/html5-boilerplate_v7.3.0/img/sq_QCCmockup.jpg" style="width:100%" alt="Mockup of Queens Cocktail Club Website">
+        </div>
+      </div>
+      <div class="columnA">
+        <div class="rowA">
+          <h3 id="pageLayout">Page Layouts</h3>
+          <p>Volunteering as a designer for <em>The Century Times</em> has been a rewarding experience.  I have the opportunity to collaborate with a writing team to create page layouts, covers, flyers and digital campus intranet advertisements.</p>
+          <br>
+        </div>
+        <div class="rowB">
+          <img src="/html5-boilerplate_v7.3.0/img/sq_OntheScene copy.jpg" style="width:100%" alt="Picture of the article 'On the Scene' layout">
+        </div>
+      </div>
+      <div class="columnA">
+        <div class="rowA">
+          <h3 id="photoshop">Photoshop</h3>
+          <p>Composition, lighting, color story. Photography is big business and imagery can make or break a campaign. I will make sure those juicy little details in an image are on point. Upcycling doesn’t have to be reserved for just furniture.
+          </p>
+          <br>
+        </div>
+        <div class="rowB">
+          <img src="/html5-boilerplate_v7.3.0/img/sq_HouseBridge.jpg" style="width:100%" alt="composite of hanoi bay with bouse bridge">
+        </div>
+      </div>
+    </div>
+  </main>
+    <!---------- PHOTOGRAPHY & ART ---------->
+    <main>
+
+    </main>
 <footer>
   <h3>&copy; Krista Marette</h3>
   <div class="footerIcon">

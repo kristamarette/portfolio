@@ -65,7 +65,7 @@ body {
 header {
   position: fixed;
   width: 95vw;
-  height: 5em;
+  height: 10vh;
   background: none;
   color: $color3;
   font-weight: 700;
@@ -74,19 +74,35 @@ header {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+  
+}
+
+.blur {
+  margin-top: 0;
+  position: fixed;
+  // background-color: $color1;
+  backdrop-filter: blur(8px);
+  // opacity: .4;
+  height: 13vh;
+  width: 100vw;
+  z-index: initial;
 }
 
 .pageTitle {
+  position: relative;
   font-family: century-gothic, sans-serif;
   font-weight: 100;
   font-style: normal;
-  font-size: 4em;
+  font-size: 5vh;
+  color: $color3;
+  z-index: 3;
 }
 
 a.logo {
   text-decoration: none;
   font-weight: bold;
   margin: 0 0.5em 0;
+  z-index: 2;
 }
 
 nav {
@@ -101,7 +117,7 @@ nav {
   opacity: .80;
   transform: translateX(50%);
   transition: all 0.5s;
-  z-index: 1;
+  z-index: 3;
 }
 
 .open {
@@ -110,6 +126,7 @@ nav {
   padding: 10px;
   background-color: $color3;
   border-radius: 50%;
+  height: 5vh;
 }
 
 .exit {
@@ -183,12 +200,12 @@ li a {
 .welcome h2 {
   padding: 2.5em 0px 0px 0px;
   font-family: gautreaux, sans-serif;
-  font-weight: 300;
+  font-weight: 700;
   font-style: normal;
   font-size: 3em;
   text-align: center;
   color: $color3;
-  z-index: -1;
+  z-index: -2;
 }
 
 .welcome p {
@@ -200,35 +217,37 @@ li a {
   font-style: normal;
   color: $color3;
   width: 40%;
-
-  z-index: -1;
+  z-index: -2;
 }
 
 .homepageMenu {
   padding: 1em;
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
   margin-top: 0;
   right: 1em;
-  flex-flow: wrap;
-  justify-content: space-evenly;
-  z-index: -1;
+  justify-content: space-around;
   background-color: #f2f2f2;
   color: $color3;
   text-align: center;
+  z-index: -2;
 }
+
 .column {
-  flex: 90%;
-  max-width: 25%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 300px;
   padding: 5px;
-  margin: 0;
-  width: 60px;
-  align-items: center;
+  margin: auto;
+  width: 300px;
   background-color: $color1;
+  color: $color3;
 
   img {
     border-radius: 50%;
     margin-top: 10px;
+    min-width: 300px;
   }
 
   a {
@@ -239,7 +258,7 @@ li a {
   h3 {
     text-align: center;
     font-family: century-gothic, sans-serif;
-    font-weight: 100;
+    font-weight: 700;
     font-style: normal;
   }
 }
@@ -251,28 +270,35 @@ li a {
 }
 
 /*---------------ABOUT ME-------------*/
+
 .aboutMenu {
   width: 100%;
+  margin-top: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   background-color: $color1;
   color: $color3;
   // align-items: center;
   margin: auto;
-  padding: 10px;
+  padding: 0 10px;
+  z-index: -2;
 }
+
 .columnA {
   width: 300px;
   padding: 5px;
   margin: 10px;
   align-items: center;
   background-color: $color1;
+  color: $color3;
   font-family: century-gothic, sans-serif;
   font-weight: 100;
   font-style: normal;
   padding: 5px;
   h3 {
     margin-top: $pad1;
+    text-align: center;
   }
   img {
     border-radius: 50%;
@@ -286,6 +312,23 @@ li a {
   }
 }
 
+#digitalArt h2 {
+  margin-bottom: 5px;
+}
+
+/*----------DIGITAL ART----------*/
+
+.digitalMenu {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100vw;
+  padding: 5px;
+  margin: auto;
+  // align-items: center;
+  background-color: $color1;
+  color: $color3;
+}
 
 /*---------------FOOTER---------------*/
 
@@ -293,7 +336,7 @@ footer {
   position: fixed;
   width: 100vw;
   bottom: 0;
-  height: 2.5em;
+  height: 7vh;
   margin-top: 10px;
   background-color: $color3;
   z-index: 1;
@@ -308,18 +351,20 @@ footer h3 {
   display: inline;
 }
 
-#footer-section a img {
+#footer-section a {
   width: 50px;
   height: 50px;
   // opacity: 0.75;
   float: right;
   display: inline-flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 0px 10px 0px 0px;
+  // padding: 0px 10px 0px 10px;
 }
 
 #footer-section i {
   display: inline-flex;
+  flex-wrap: wrap;
 }
 
 #footer-section h3 {
@@ -332,6 +377,17 @@ footer h3 {
   color: $color1;
 }
 
+#footer-section a img {
+  margin-top: 0;
+  width: 50px;
+  height: 50px;
+}
+
+.footerIcon {
+  height: 50px;
+  margin-bottom: 0;
+  padding: 0px 0px 10px 0px;
+}
 // .info {
 //   color: $color3;
 // }
