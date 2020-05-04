@@ -54,7 +54,7 @@ body {
 header {
   position: fixed;
   width: 95vw;
-  height: 10vh;
+  height: 12vh;
   background: none;
   color: #1a1818;
   font-weight: 700;
@@ -69,24 +69,26 @@ header {
   overflow: hidden;
 }
 
-.blur {
-  margin-top: 0;
-  position: fixed;
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
-  height: 13vh;
-  width: 100vw;
-  z-index: initial;
-}
-
 .pageTitle {
   position: relative;
   font-family: century-gothic, sans-serif;
   font-weight: 100;
   font-style: normal;
-  font-size: 5vh;
+  font-size: 7vh;
+  margin: 0;
+  padding: 0;
   color: #1a1818;
   z-index: 3;
+}
+
+.blur {
+  margin-top: 0;
+  position: fixed;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  height: 15vh;
+  width: 100vw;
+  z-index: initial;
 }
 
 a.logo {
@@ -324,7 +326,7 @@ li a {
   margin-bottom: 5px;
 }
 
-/*----------DIGITAL ART----------*/
+/*------------DIGITAL ART--------------*/
 .digitalMenu {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -336,6 +338,23 @@ li a {
           justify-content: space-evenly;
   width: 100vw;
   padding: 5px;
+  margin: auto;
+  background-color: #f2f2f2;
+  color: #1a1818;
+}
+
+/*---------PHOTOGRAPHY & ART----------*/
+.fineArt {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100vw;
+  padding: 15px;
   margin: auto;
   background-color: #f2f2f2;
   color: #1a1818;
