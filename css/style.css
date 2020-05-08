@@ -194,13 +194,14 @@ li a {
 
 /*-------------HOME PAGE------------*/
 .welcome h2 {
-  padding: 2.5em 0px 0px 0px;
+  padding: 3.25em 0px 5px 0px;
   font-family: gautreaux, sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 3em;
   text-align: center;
   color: #1a1818;
+  margin-top: 0;
   z-index: -2;
 }
 
@@ -289,14 +290,12 @@ li a {
   background-color: #f2f2f2;
   color: #1a1818;
   margin: auto;
-  padding: 0 10px;
+  padding: 5px;
   z-index: -2;
 }
 
 .columnA {
   width: 300px;
-  padding: 5px;
-  margin: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -305,7 +304,6 @@ li a {
   font-family: century-gothic, sans-serif;
   font-weight: 100;
   font-style: normal;
-  padding: 5px;
 }
 
 .columnA h3 {
@@ -326,10 +324,6 @@ li a {
   text-decoration: none;
 }
 
-#digitalArt h2 {
-  margin-bottom: 5px;
-}
-
 /*------------DIGITAL ART--------------*/
 .digitalMenu {
   display: -webkit-inline-box;
@@ -348,32 +342,22 @@ li a {
 }
 
 /*---------PHOTOGRAPHY & ART----------*/
-.fineArt {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  width: 100vw;
-  padding: 15px;
-  margin: auto;
+.bottom {
   background-color: #f2f2f2;
-  color: #1a1818;
+  padding-bottom: 12vh;
+  width: 100vw;
+  z-index: -1;
 }
 
 /*---------------FOOTER---------------*/
 footer {
   position: fixed;
   width: 100vw;
+  height: 10vh;
   bottom: 0;
-  height: 7vh;
   margin-top: 10px;
   background-color: #1a1818;
-  z-index: 1;
-  padding-bottom: 30px;
+  z-index: initial;
 }
 
 footer h3 {
@@ -433,12 +417,15 @@ footer h3 {
   }
   main {
     margin-left: 0;
+    margin-right: 0;
   }
   .open {
     height: 3vh;
   }
   nav {
-    width: 50%;
+    width: 70%;
+    height: 100%;
+    overflow: visible;
   }
   .welcome p {
     width: 80vw;

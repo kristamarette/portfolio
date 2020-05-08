@@ -202,13 +202,14 @@ li a {
 /*-------------HOME PAGE------------*/
 
 .welcome h2 {
-  padding: 2.5em 0px 0px 0px;
+  padding: 3.25em 0px 5px 0px;
   font-family: gautreaux, sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 3em;
   text-align: center;
   color: $color3;
+  margin-top: 0;
   z-index: -2;
 }
 
@@ -286,21 +287,20 @@ li a {
   color: $color3;
   // align-items: center;
   margin: auto;
-  padding: 0 10px;
+  padding: 5px;
   z-index: -2;
 }
 
 .columnA {
   width: 300px;
-  padding: 5px;
-  margin: 10px;
+  // margin: 10px;
   align-items: center;
   background-color: $color1;
   color: $color3;
   font-family: century-gothic, sans-serif;
   font-weight: 100;
   font-style: normal;
-  padding: 5px;
+  // padding: 5px;
   h3 {
     margin-top: $pad1;
     text-align: center;
@@ -317,9 +317,6 @@ li a {
   }
 }
 
-#digitalArt h2 {
-  margin-bottom: 5px;
-}
 
 /*------------DIGITAL ART--------------*/
 
@@ -336,31 +333,23 @@ li a {
 }
 
 /*---------PHOTOGRAPHY & ART----------*/
-.fineArt {
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 100vw;
-  padding: 15px;
-  margin: auto;
-  // align-items: center;
+.bottom {
   background-color: $color1;
-  color: $color3;
-  // img:nth-last-child(6) {
-  //   padding-bottom: 7em;
-  
+  padding-bottom: 12vh;
+  width: 100vw;
+  z-index: -1;
 }
 /*---------------FOOTER---------------*/
+
 
 footer {
   position: fixed;
   width: 100vw;
+  height: 10vh;
   bottom: 0;
-  height: 7vh;
   margin-top: 10px;
   background-color: $color3;
-  z-index: 1;
-  padding-bottom: 30px;
+  z-index: initial;
 }
 
 footer h3 {
@@ -424,6 +413,7 @@ footer h3 {
   }
   main {
     margin-left: 0;
+    margin-right: 0;
   }
 
   .open {
@@ -431,7 +421,9 @@ footer h3 {
   }
 
   nav {
-    width: 50%;
+    width: 70%;
+    height: 100%;
+    overflow: visible;
   }
 
   .welcome p {
