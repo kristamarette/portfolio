@@ -422,6 +422,10 @@ footer h3 {
     visibility: hidden;
 
   }
+  main {
+    margin-left: 0;
+  }
+
   .open {
     height: 3vh;
   }
@@ -434,6 +438,19 @@ footer h3 {
     width: 80vw;
   }
 
+  p {
+    width: 80vw;
+    text-align: left;
+  }
+
+  .aboutMenu p {
+    width: 80vw;
+    margin-left: 0;
+  }
+  .digitalMenu p {
+    width: 80vw;
+  }
+
   footer i {
     visibility: hidden;
 
@@ -442,6 +459,7 @@ footer h3 {
   .info {
     visibility: hidden;
   }
+
   #footer-section {
   margin: auto;
   width: 2vw;
