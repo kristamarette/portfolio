@@ -78,6 +78,7 @@ header {
   margin: 0;
   padding: 0;
   color: #1a1818;
+  visibility: unset;
   z-index: 3;
 }
 
@@ -125,7 +126,7 @@ nav {
 }
 
 .exit {
-  width: 2em;
+  height: 2em;
   float: right;
   margin: 0.5em;
   cursor: pointer;
@@ -423,6 +424,39 @@ footer h3 {
   height: 50px;
   margin-bottom: 0;
   padding: 0px 0px 10px 0px;
+}
+
+/*<--------------_RESPONSIVE----------------*/
+@media screen and (max-width: 600px) {
+  .pageTitle {
+    visibility: hidden;
+  }
+  .open {
+    height: 3vh;
+  }
+  nav {
+    width: 50%;
+  }
+  footer i {
+    visibility: hidden;
+  }
+  .info {
+    visibility: hidden;
+  }
+  #footer-section {
+    margin: auto;
+    width: 2vw;
+    height: 2vh;
+    float: none;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 
 /* ----------- PROJECT GUIDELINES ------------*/
