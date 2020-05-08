@@ -430,6 +430,10 @@ footer h3 {
     width: 50%;
   }
 
+  .welcome p {
+    width: 80vw;
+  }
+
   footer i {
     visibility: hidden;
 
@@ -443,10 +447,11 @@ footer h3 {
   width: 2vw;
   height: 2vh;
   // opacity: 0.75;
-  float: none;
+  float: center;
   display: inline-flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-evenly;
+
   }
 
 }

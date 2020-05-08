@@ -437,6 +437,9 @@ footer h3 {
   nav {
     width: 50%;
   }
+  .welcome p {
+    width: 80vw;
+  }
   footer i {
     visibility: hidden;
   }
@@ -447,12 +450,12 @@ footer h3 {
     margin: auto;
     width: 2vw;
     height: 2vh;
-    float: none;
+    float: center;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
